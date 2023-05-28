@@ -30,8 +30,8 @@ pipeline {
 
 //In this example, the findFiles step is used to search for files in the specified directory (searchDirectory) with the given extensions (fileExtensions). The glob parameter allows you to specify a pattern using the {} syntax to match multiple file extensions. The foundFiles variable stores the paths of the found files.
 
-You can customize the searchDirectory and fileExtensions variables to match your specific requirements. Additionally, you can add more stages or steps to perform further actions with the found files, such as processing or copying them.
+//You can customize the searchDirectory and fileExtensions variables to match your specific requirements. Additionally, you can add more stages or steps to perform further actions with the found files, such as processing or copying them.
 
-Make sure to replace /path/to/search/directory with the actual directory path you want to search in.//
+//Make sure to replace /path/to/search/directory with the actual directory path you want to search in.
 
 
