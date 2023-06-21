@@ -1,0 +1,15 @@
+
+#!/bin/bash
+
+JENKINS_URL="http://jenkins.example.com"
+AGENT_NAME="agent-1"
+
+# Get agent status using Jenkins REST API
+agent_status=$(curl -s "${JENKINS_URL}/computer/${AGENT_NAME}/api/json" | jq -r '.offline')
+
+# Check agent status and print the result
+if [ "$agent_status" = "true" ]; then
+    echo "Agent '${AGENT_NAME}' is offline."
+else
+    echo "Agent '${AGENT_NAME}' is online."
+fi
